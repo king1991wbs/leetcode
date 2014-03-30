@@ -55,11 +55,13 @@ void cyclic::insert(int con2insert)
         if(back == this->cyc_start)
         {
             //插入判断
+            /*
             if(con2insert > back->content)
             {
                 front = back;
                 back = back->next;
             }
+            */
             ins->next = back;
             front->next = ins;
             return;
