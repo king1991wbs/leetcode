@@ -1,0 +1,217 @@
+GoAgent CA - GoAgent                                         CT,c,c
+INFO - [Mar 30 20:32:36] resolve common.IPLIST_MAP names=['google_cn', 'google_hk', 'google_ipv6', 'talk.google.com', 'talk.l.google.com', 'talkx.l.google.com'] to iplist
+WARNING - [Mar 30 20:32:36] local need_resolve_hosts=['www.google.com', 'mail.google.com', 'www.google.com.hk', 'www.google.com.tw', 'www.l.google.com'] is too short, try remote_resolve
+INFO - [Mar 30 20:32:36] resolve name=google_hk host to iplist=['173.194.127.180', '173.194.127.183', '173.194.127.184', '173.194.72.147', '173.194.72.106', '173.194.72.94', '74.125.128.103', '74.125.128.105', '74.125.128.104', '74.125.128.106', '74.125.128.147', '173.194.72.83', '173.194.127.49', '173.194.127.191', '74.125.128.199', '173.194.72.18', '173.194.72.19', '173.194.127.176', '173.194.127.177', '173.194.127.178', '173.194.127.179', '173.194.72.17', '74.125.31.99', '74.125.128.83', '74.125.128.94', '74.125.128.99', '74.125.128.18', '74.125.128.19', '74.125.31.94', '173.194.127.50', '173.194.127.51', '173.194.127.52', '173.194.127.48', '173.194.72.99', '74.125.128.17']
+INFO - [Mar 30 20:32:36] resolve name=talk.google.com host to iplist=['74.125.128.125']
+INFO - [Mar 30 20:32:36] resolve name=talk.l.google.com host to iplist=['74.125.128.125']
+INFO - [Mar 30 20:32:36] resolve name=talkx.l.google.com host to iplist=['173.194.72.125']
+INFO - [Mar 30 20:32:36] 127.0.0.1:46734 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:36] 127.0.0.1:46741 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:36] 127.0.0.1:46742 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:36] 127.0.0.1:46744 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:36] 127.0.0.1:46743 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:38] 127.0.0.1:46743 "GAE GET https://github.global.ssl.fastly.net/images/modules/notices/context_button.png HTTP/1.1" 200 22344
+INFO - [Mar 30 20:32:38] autorange range='bytes=7480-1056055' match url='https://github.global.ssl.fastly.net/assets/github-b4baae9c06716bcd0a8068e3030607851f19b980.css'
+INFO - [Mar 30 20:32:38] autorange range='bytes=24576-1073151' match url='https://github.global.ssl.fastly.net/assets/github2-4940da06adce480cfcfba223624a2b2f09e8f90f.css'
+INFO - [Mar 30 20:32:38] 127.0.0.1:46757 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:38] 127.0.0.1:46758 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:38] GAEProxyHandler.do_METHOD_AGENT url='https://github.global.ssl.fastly.net/images/modules/notices/context_button.png' return SSLError(1, '_ssl.c:1302: error:1409F07F:SSL routines:SSL3_WRITE_PENDING:bad write retry'), abort.
+INFO - [Mar 30 20:32:38] 127.0.0.1:46734 "GAE GET https://github.global.ssl.fastly.net/assets/github-b4baae9c06716bcd0a8068e3030607851f19b980.css HTTP/1.1" 206 48271
+INFO - [Mar 30 20:32:38] >>>>>>>>>>>>>>> RangeFetch started('https://github.global.ssl.fastly.net/assets/github-b4baae9c06716bcd0a8068e3030607851f19b980.css') 7480-55750
+INFO - [Mar 30 20:32:38] >>>>>>>>>>>>>>> [thread 140153918506752] 48271 bytes 7480-55750/55751
+INFO - [Mar 30 20:32:38] autorange range='bytes=7480-1056055' match url='https://github.global.ssl.fastly.net/assets/github-b4baae9c06716bcd0a8068e3030607851f19b980.css'
+INFO - [Mar 30 20:32:38] 127.0.0.1:46744 "GAE GET https://github.global.ssl.fastly.net/assets/github2-4940da06adce480cfcfba223624a2b2f09e8f90f.css HTTP/1.1" 206 32767
+INFO - [Mar 30 20:32:38] >>>>>>>>>>>>>>> RangeFetch started('https://github.global.ssl.fastly.net/assets/github2-4940da06adce480cfcfba223624a2b2f09e8f90f.css') 24576-57342
+INFO - [Mar 30 20:32:38] >>>>>>>>>>>>>>> [thread 140152475207424] 32767 bytes 24576-57342/57343
+INFO - [Mar 30 20:32:38] autorange range='bytes=24576-1073151' match url='https://github.global.ssl.fastly.net/assets/github2-4940da06adce480cfcfba223624a2b2f09e8f90f.css'
+INFO - [Mar 30 20:32:39] RangeFetch client connection aborted([Errno 104] Connection reset by peer).
+INFO - [Mar 30 20:32:39] >>>>>>>>>>>>>>> Successfully reached 57342 bytes.
+INFO - [Mar 30 20:32:39] RangeFetch client connection aborted([Errno 104] Connection reset by peer).
+INFO - [Mar 30 20:32:39] 127.0.0.1:46758 "GAE GET https://github.global.ssl.fastly.net/assets/frameworks-4ffe0645461d6fd51485ee3e555a732ee7075743.js HTTP/1.1" 200 150042
+INFO - [Mar 30 20:32:39] 127.0.0.1:46757 "GAE GET https://github.global.ssl.fastly.net/assets/github-8569770199d7c3e78f612511392c027e9a5ccc0d.js HTTP/1.1" 200 90946
+INFO - [Mar 30 20:32:39] 127.0.0.1:46775 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:40] 127.0.0.1:46742 "GAE GET https://github.global.ssl.fastly.net/assets/github2-4940da06adce480cfcfba223624a2b2f09e8f90f.css HTTP/1.1" 206 32767
+INFO - [Mar 30 20:32:40] >>>>>>>>>>>>>>> RangeFetch started('https://github.global.ssl.fastly.net/assets/github2-4940da06adce480cfcfba223624a2b2f09e8f90f.css') 24576-57342
+INFO - [Mar 30 20:32:40] >>>>>>>>>>>>>>> [thread 140152450029312] 32767 bytes 24576-57342/57343
+INFO - [Mar 30 20:32:40] 127.0.0.1:46741 "GAE GET https://github.global.ssl.fastly.net/assets/github-b4baae9c06716bcd0a8068e3030607851f19b980.css HTTP/1.1" 206 48271
+INFO - [Mar 30 20:32:40] >>>>>>>>>>>>>>> RangeFetch started('https://github.global.ssl.fastly.net/assets/github-b4baae9c06716bcd0a8068e3030607851f19b980.css') 7480-55750
+INFO - [Mar 30 20:32:40] >>>>>>>>>>>>>>> [thread 140153364408064] 48271 bytes 7480-55750/55751
+INFO - [Mar 30 20:32:40] 127.0.0.1:46775 "GAE GET https://github.global.ssl.fastly.net/images/modules/notices/context_button.png HTTP/1.1" 200 22344
+INFO - [Mar 30 20:32:45] >>>>>>>>>>>>>>> Successfully reached 55750 bytes.
+INFO - [Mar 30 20:32:46] >>>>>>>>>>>>>>> Successfully reached 57342 bytes.
+INFO - [Mar 30 20:32:47] 127.0.0.1:46779 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:47] 127.0.0.1:46781 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:47] 127.0.0.1:46780 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:47] 127.0.0.1:46786 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:48] 127.0.0.1:46791 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:48] 127.0.0.1:46796 "FWD CONNECT clients4.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 20:32:48] 127.0.0.1:46779 "GAE GET https://github.global.ssl.fastly.net/assets/octicons-9bbae08c1cd7e286a9ccaff26ec329833bd7fd96.woff HTTP/1.1" 200 19276
+INFO - [Mar 30 20:32:48] 127.0.0.1:46781 "GAE GET https://github.global.ssl.fastly.net/images/modules/dashboard/bootcamp/octocat_setup.png?4249e877 HTTP/1.1" 200 10722
+INFO - [Mar 30 20:32:48] 127.0.0.1:46780 "GAE GET https://github.global.ssl.fastly.net/images/modules/dashboard/bootcamp/octocat_repo.png?b4d3ba0f HTTP/1.1" 200 11355
+INFO - [Mar 30 20:32:49] 127.0.0.1:46791 "GAE GET https://github.global.ssl.fastly.net/images/modules/dashboard/bootcamp/octocat_collabocats.png?05794986 HTTP/1.1" 200 25662
+INFO - [Mar 30 20:32:49] 127.0.0.1:46786 "GAE GET https://github.global.ssl.fastly.net/images/modules/dashboard/bootcamp/octocat_fork.png?8dde94be HTTP/1.1" 200 32883
+WARNING - [Mar 30 20:32:50] GAEProxyHandler.do_METHOD_AGENT timed out, url='https://github.global.ssl.fastly.net/assets/github-8569770199d7c3e78f612511392c027e9a5ccc0d.js', content_length=90946, try again
+INFO - [Mar 30 20:32:52] GAEProxyHandler.do_METHOD_AGENT url='https://github.global.ssl.fastly.net/assets/github-8569770199d7c3e78f612511392c027e9a5ccc0d.js' return SSLError(1, '_ssl.c:1302: error:1409F07F:SSL routines:SSL3_WRITE_PENDING:bad write retry'), abort.
+INFO - [Mar 30 20:33:13] 127.0.0.1:46816 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:33:14] 127.0.0.1:46816 "GAE GET https://github.global.ssl.fastly.net/favicon.ico HTTP/1.1" 200 6518
+INFO - [Mar 30 20:33:15] 127.0.0.1:46822 "FWD CONNECT clients1.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 20:34:02] 127.0.0.1:46849 "FWD CONNECT www.google.com.hk:443 HTTP/1.1" - -
+INFO - [Mar 30 20:34:08] 127.0.0.1:46858 "FWD GET http://fonts.googleapis.com/css?family=Chelsea+Market HTTP/1.1" 200 290
+INFO - [Mar 30 20:34:09] 127.0.0.1:46864 "FWD GET http://themes.googleusercontent.com/static/fonts/chelseamarket/v2/qSdzwh2A4BbNemy78sJLfFg5923bhI0e2gp7DBvMMjU.woff HTTP/1.1" 200 72580
+INFO - [Mar 30 20:34:10] 127.0.0.1:46872 "FWD GET http://www.google-analytics.com/__utm.gif?utmwv=5.4.8&utms=1&utmn=245464456&utmhn=rogerdudler.github.io&utmcs=UTF-8&utmsr=1366x768&utmvp=1351x653&utmsc=24-bit&utmul=en-us&utmje=1&utmfl=12.0%20r0&utmdt=git%20-%20the%20simple%20guide%20-%20no%20deep%20shit!&utmhid=795163790&utmr=https%3A%2F%2Fwww.google.com.hk%2F&utmp=%2Fgit-guide%2Findex.zh.html&utmht=1396182848933&utmac=UA-652147-13&utmcc=__utma%3D2460851.1601987028.1396182849.1396182849.1396182849.1%3B%2B__utmz%3D2460851.1396182849.1.1.utmcsr%3Dgoogle%7Cutmccn%3D(organic)%7Cutmcmd%3Dorganic%7Cutmctr%3D(not%2520provided)%3B&utmu=qAAAAAAAAAAAAAAAAAAAAAQ~ HTTP/1.1" 200 35
+INFO - [Mar 30 20:34:11] 127.0.0.1:46867 "GAE GET http://platform.twitter.com/widgets.js HTTP/1.1" 200 29532
+INFO - [Mar 30 20:34:13] 127.0.0.1:46886 "GAE GET http://platform.twitter.com/widgets/tweet_button.1395870373.html HTTP/1.1" 200 26790
+INFO - [Mar 30 20:34:13] 127.0.0.1:46887 "AGENT CONNECT twitter.com:443 HTTP/1.1" - -
+INFO - [Mar 30 20:34:14] 127.0.0.1:46888 "GAE GET http://cdn.api.twitter.com/1/urls/count.json?url=http%3A%2F%2Frogerdudler.github.com%2Fgit-guide&callback=twttr.receiveCount HTTP/1.1" 200 108
+INFO - [Mar 30 20:34:14] 127.0.0.1:46887 "GAE GET https://twitter.com/i/jot?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22language%22%3A%22zh-cn%22%2C%22client_version%22%3A%221.1%3Al%3Ac%22%2C%22widget_origin%22%3A%22http%3A%2F%2Frogerdudler.github.io%2Fgit-guide%2Findex.zh.html%22%2C%22format_version%22%3A1%2C%22dnt%22%3Afalse%2C%22triggered_on%22%3A1396182853799%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22button%22%2C%22section%22%3A%22share%22%2C%22action%22%3A%22impression%22%7D%7D HTTP/1.1" 200 65
+INFO - [Mar 30 20:38:36] 127.0.0.1:46993 "FWD CONNECT mail.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 20:38:51] 127.0.0.1:46998 "GAE GET http://book.git-scm.com/2_installing_git.html HTTP/1.1" 301 99
+INFO - [Mar 30 20:38:52] 127.0.0.1:47004 "GAE GET http://git-scm.com/book/2_installing_git.html HTTP/1.1" 302 123
+INFO - [Mar 30 20:38:54] 127.0.0.1:47005 "GAE GET http://git-scm.com/book/en/Getting-Started-Installing-Git HTTP/1.1" 200 5670
+INFO - [Mar 30 20:38:56] 127.0.0.1:47030 "GAE GET http://git-scm.com/assets/jquery-1.7.1.min-02a44017c3f142057ff47b0fc8b6864f.js HTTP/1.1" 200 32928
+INFO - [Mar 30 20:38:56] 127.0.0.1:47015 "GAE GET http://git-scm.com/assets/modernizr-6caa5d3c04a79bb71ff5bc169599c7bb.js HTTP/1.1" 200 3767
+INFO - [Mar 30 20:38:56] 127.0.0.1:47025 "GAE GET http://git-scm.com/images/logo@2x.png HTTP/1.1" 200 3892
+INFO - [Mar 30 20:38:56] 127.0.0.1:47035 "GAE GET http://git-scm.com/assets/jquery-ui-1.8.18.custom.min-4aa46037fd437d36e966a36dab36de44.js HTTP/1.1" 200 51990
+INFO - [Mar 30 20:38:56] 127.0.0.1:47010 "GAE GET http://git-scm.com/assets/git-scm-c6d584847a7dd6bb94d6fe55fccaa7ac.css HTTP/1.1" 200 8663
+INFO - [Mar 30 20:38:56] 127.0.0.1:47044 "GAE GET http://git-scm.com/assets/session.min-549579c957b186d468345c54fb3be112.js HTTP/1.1" 200 3073
+INFO - [Mar 30 20:38:57] 127.0.0.1:47045 "GAE GET http://git-scm.com/assets/site-3dd075acbe877e96db5a97894c829a9a.js HTTP/1.1" 200 2208
+INFO - [Mar 30 20:38:57] 127.0.0.1:47020 "GAE GET http://git-scm.com/assets/modernizr-tests-7d276fc9b3f84590beb0bba47cdd823a.js HTTP/1.1" 200 165
+INFO - [Mar 30 20:38:57] 127.0.0.1:47043 "GAE GET http://git-scm.com/assets/jquery.defaultvalue-b13dd36717cbc6186020f0b40ecacbfe.js HTTP/1.1" 200 215
+INFO - [Mar 30 20:38:57] 127.0.0.1:47046 "GAE GET http://git-scm.com/figures/18333fig0107-tn.png HTTP/1.1" 200 19866
+INFO - [Mar 30 20:38:59] 127.0.0.1:47061 "FWD CONNECT www.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 20:38:59] 127.0.0.1:47048 "GAE GET http://git-scm.com/images/icons/search.png HTTP/1.1" 200 305
+INFO - [Mar 30 20:38:59] 127.0.0.1:47047 "GAE GET http://git-scm.com/images/bg/body.jpg HTTP/1.1" 200 1059
+INFO - [Mar 30 20:38:59] 127.0.0.1:47049 "GAE GET http://git-scm.com/images/bg/search-header.jpg HTTP/1.1" 200 766
+INFO - [Mar 30 20:38:59] 127.0.0.1:47050 "GAE GET http://git-scm.com/images/sidebar-divider.png HTTP/1.1" 200 144
+INFO - [Mar 30 20:39:00] 127.0.0.1:47056 "GAE GET http://git-scm.com/images/icons/code.png HTTP/1.1" 200 377
+INFO - [Mar 30 20:39:01] 127.0.0.1:47051 "GAE GET http://git-scm.com/images/icons/document-sm.png HTTP/1.1" 200 212
+INFO - [Mar 30 20:39:05] 127.0.0.1:47068 "FWD CONNECT clients4.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 20:39:10] 127.0.0.1:47081 "GAE GET http://git-scm.com/favicon.ico HTTP/1.1" 200 1150
+INFO - [Mar 30 20:42:28] 127.0.0.1:35766 "GET /proxy.pac HTTP/1.1" 200 -
+INFO - [Mar 30 20:42:29] try download 'http://adblock-chinalist.googlecode.com/svn/trunk/adblock.txt' to update_pacfile('/home/wilson/goagent/local/proxy.pac')
+INFO - [Mar 30 20:42:29] 127.0.0.1:47129 "FWD GET http://adblock-chinalist.googlecode.com/svn/trunk/adblock.txt HTTP/1.1" 401 401
+ERROR - [Mar 30 20:42:29] update_pacfile failed: HTTPError()
+Traceback (most recent call last):
+  File "../goagent/local/proxy.py", line 554, in update_pacfile
+  File "/usr/lib64/python2.7/urllib2.py", line 410, in open
+    response = meth(req, response)
+  File "/usr/lib64/python2.7/urllib2.py", line 523, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib64/python2.7/urllib2.py", line 448, in error
+    return self._call_chain(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 531, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 401: 
+
+INFO - [Mar 30 20:42:29] try download 'http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt' to update_pacfile('/home/wilson/goagent/local/proxy.pac')
+INFO - [Mar 30 20:42:29] 127.0.0.1:47134 "FWD GET http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt HTTP/1.1" 200 135164
+INFO - [Mar 30 20:42:30] 'http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt' downloaded, try convert it with autoproxy2pac
+INFO - [Mar 30 20:42:30] 'http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt' downloaded and parsed
+INFO - [Mar 30 20:43:36] 127.0.0.1:47143 "FWD CONNECT mail.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 20:51:00] 127.0.0.1:47262 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:51:00] 127.0.0.1:47261 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:51:00] 127.0.0.1:47260 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:51:00] 127.0.0.1:47263 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:51:00] 127.0.0.1:47264 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:51:04] 127.0.0.1:47272 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:51:04] 127.0.0.1:47273 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:51:06] 127.0.0.1:47273 "GAE GET https://github.global.ssl.fastly.net/assets/github-8569770199d7c3e78f612511392c027e9a5ccc0d.js HTTP/1.1" 304 0
+INFO - [Mar 30 20:51:06] 127.0.0.1:47261 "GAE GET https://github.global.ssl.fastly.net/assets/github-b4baae9c06716bcd0a8068e3030607851f19b980.css HTTP/1.1" 304 0
+INFO - [Mar 30 20:51:07] 127.0.0.1:47272 "GAE GET https://github.global.ssl.fastly.net/assets/frameworks-4ffe0645461d6fd51485ee3e555a732ee7075743.js HTTP/1.1" 304 0
+INFO - [Mar 30 20:51:08] 127.0.0.1:47262 "GAE GET https://github.global.ssl.fastly.net/assets/github2-4940da06adce480cfcfba223624a2b2f09e8f90f.css HTTP/1.1" 304 0
+INFO - [Mar 30 20:51:10] 127.0.0.1:47264 "GAE GET https://github.global.ssl.fastly.net/assets/octicons-9bbae08c1cd7e286a9ccaff26ec329833bd7fd96.woff HTTP/1.1" 304 0
+INFO - [Mar 30 20:51:15] 127.0.0.1:47293 "FWD CONNECT clients4.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 20:52:02] 127.0.0.1:47318 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:52:03] 127.0.0.1:47324 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:52:03] 127.0.0.1:47325 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:52:05] 127.0.0.1:47325 "GAE GET https://github.global.ssl.fastly.net/assets/frameworks-4ffe0645461d6fd51485ee3e555a732ee7075743.js HTTP/1.1" 304 0
+INFO - [Mar 30 20:52:05] 127.0.0.1:47318 "GAE GET https://github.global.ssl.fastly.net/assets/github-b4baae9c06716bcd0a8068e3030607851f19b980.css HTTP/1.1" 304 0
+INFO - [Mar 30 20:52:05] 127.0.0.1:47324 "GAE GET https://github.global.ssl.fastly.net/assets/github-8569770199d7c3e78f612511392c027e9a5ccc0d.js HTTP/1.1" 304 0
+INFO - [Mar 30 20:52:05] 127.0.0.1:47260 "GAE GET https://github.global.ssl.fastly.net/assets/github2-4940da06adce480cfcfba223624a2b2f09e8f90f.css HTTP/1.1" 304 0
+INFO - [Mar 30 20:52:05] 127.0.0.1:47347 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:52:05] 127.0.0.1:47351 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:52:05] 127.0.0.1:47352 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:52:06] 127.0.0.1:47353 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:52:06] 127.0.0.1:47263 "GAE GET https://github.global.ssl.fastly.net/images/modules/notices/context_button.png HTTP/1.1" 304 0
+INFO - [Mar 30 20:52:06] 127.0.0.1:47347 "GAE GET https://github.global.ssl.fastly.net/assets/octicons-9bbae08c1cd7e286a9ccaff26ec329833bd7fd96.woff HTTP/1.1" 304 0
+INFO - [Mar 30 20:52:06] 127.0.0.1:47354 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:52:06] 127.0.0.1:47351 "GAE GET https://github.global.ssl.fastly.net/images/modules/dashboard/bootcamp/octocat_fork.png?8dde94be HTTP/1.1" 304 0
+INFO - [Mar 30 20:52:06] 127.0.0.1:47352 "GAE GET https://github.global.ssl.fastly.net/images/modules/dashboard/bootcamp/octocat_setup.png?4249e877 HTTP/1.1" 304 0
+INFO - [Mar 30 20:52:06] 127.0.0.1:47353 "GAE GET https://github.global.ssl.fastly.net/images/modules/dashboard/bootcamp/octocat_repo.png?b4d3ba0f HTTP/1.1" 304 0
+INFO - [Mar 30 20:52:07] 127.0.0.1:47354 "GAE GET https://github.global.ssl.fastly.net/images/modules/dashboard/bootcamp/octocat_collabocats.png?05794986 HTTP/1.1" 200 25662
+INFO - [Mar 30 20:52:37] 127.0.0.1:47360 "FWD CONNECT mail.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 20:54:41] 127.0.0.1:47384 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:54:41] 127.0.0.1:47385 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:54:42] 127.0.0.1:47392 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:54:42] 127.0.0.1:47393 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:54:44] 127.0.0.1:47392 "GAE GET https://github.global.ssl.fastly.net/assets/github-8569770199d7c3e78f612511392c027e9a5ccc0d.js HTTP/1.1" 304 0
+INFO - [Mar 30 20:54:44] 127.0.0.1:47384 "GAE GET https://github.global.ssl.fastly.net/assets/github2-4940da06adce480cfcfba223624a2b2f09e8f90f.css HTTP/1.1" 304 0
+INFO - [Mar 30 20:54:44] 127.0.0.1:47385 "GAE GET https://github.global.ssl.fastly.net/assets/github-b4baae9c06716bcd0a8068e3030607851f19b980.css HTTP/1.1" 304 0
+INFO - [Mar 30 20:54:44] 127.0.0.1:47393 "GAE GET https://github.global.ssl.fastly.net/assets/frameworks-4ffe0645461d6fd51485ee3e555a732ee7075743.js HTTP/1.1" 304 0
+INFO - [Mar 30 20:54:44] 127.0.0.1:47411 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:54:44] 127.0.0.1:47415 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:54:45] 127.0.0.1:47411 "GAE GET https://github.global.ssl.fastly.net/images/modules/notices/context_button.png HTTP/1.1" 200 22344
+INFO - [Mar 30 20:54:45] 127.0.0.1:47422 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:54:45] 127.0.0.1:47415 "GAE GET https://github.global.ssl.fastly.net/assets/octicons-9bbae08c1cd7e286a9ccaff26ec329833bd7fd96.woff HTTP/1.1" 304 0
+INFO - [Mar 30 20:54:46] 127.0.0.1:47422 "GAE GET https://github.global.ssl.fastly.net/images/modules/dashboard/bootcamp/octocat_setup.png?4249e877 HTTP/1.1" 304 0
+INFO - [Mar 30 20:54:46] 127.0.0.1:47423 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:54:46] 127.0.0.1:47423 "GAE GET https://github.global.ssl.fastly.net/images/modules/dashboard/bootcamp/octocat_fork.png?8dde94be HTTP/1.1" 304 0
+INFO - [Mar 30 20:54:48] 127.0.0.1:47425 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:54:48] 127.0.0.1:47425 "GAE GET https://github.global.ssl.fastly.net/images/modules/dashboard/bootcamp/octocat_repo.png?b4d3ba0f HTTP/1.1" 304 0
+INFO - [Mar 30 20:54:48] 127.0.0.1:47426 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 20:54:50] 127.0.0.1:47426 "GAE GET https://github.global.ssl.fastly.net/images/modules/dashboard/bootcamp/octocat_collabocats.png?05794986 HTTP/1.1" 304 0
+INFO - [Mar 30 20:54:53] 127.0.0.1:47431 "FWD CONNECT clients4.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 20:55:06] 127.0.0.1:47437 "FWD CONNECT www.google.com.hk:443 HTTP/1.1" - -
+INFO - [Mar 30 20:55:10] 127.0.0.1:47452 "FWD GET http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js HTTP/1.1" 200 33471
+INFO - [Mar 30 20:55:10] 127.0.0.1:47444 "FWD GET http://fonts.googleapis.com/css?family=Spirax HTTP/1.1" 200 222
+INFO - [Mar 30 20:55:13] 127.0.0.1:47456 "FWD GET http://themes.googleusercontent.com/static/fonts/spirax/v3/wiA6NnIvV_zF9oTZ_yafzA.woff HTTP/1.1" 200 21796
+INFO - [Mar 30 20:55:14] 127.0.0.1:47461 "FWD GET http://www.google-analytics.com/__utm.gif?utmwv=5.4.8&utms=1&utmn=2041739037&utmhn=www.yangzhiping.com&utmcs=UTF-8&utmsr=1366x768&utmvp=1351x653&utmsc=24-bit&utmul=en-us&utmje=1&utmfl=12.0%20r0&utmdt=%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%88%A9%E7%94%A8GitHub%20-%20%E9%98%B3%E5%BF%97%E5%B9%B3%E7%9A%84%E7%BD%91%E5%BF%97&utmhid=483376710&utmr=https%3A%2F%2Fwww.google.com.hk%2F&utmp=%2Ftech%2Fgithub.html&utmht=1396184113856&utmac=UA-6781501-12&utmcc=__utma%3D132707718.108521298.1396184114.1396184114.1396184114.1%3B%2B__utmz%3D132707718.1396184114.1.1.utmcsr%3Dgoogle%7Cutmccn%3D(organic)%7Cutmcmd%3Dorganic%7Cutmctr%3D(not%2520provided)%3B&utmu=qAAAAAAAAAAAAAAAAAAAAAQ~ HTTP/1.1" 200 35
+INFO - [Mar 30 20:57:37] 127.0.0.1:47501 "FWD CONNECT mail.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 20:58:11] 127.0.0.1:47512 "FWD CONNECT www.google.com.hk:443 HTTP/1.1" - -
+INFO - [Mar 30 20:58:25] 127.0.0.1:47560 "FWD CONNECT clients4.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 21:00:48] 127.0.0.1:47722 "FWD CONNECT clients4.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 21:02:37] 127.0.0.1:47749 "FWD CONNECT mail.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 21:02:51] 127.0.0.1:47765 "FWD CONNECT clients4.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 21:07:33] 127.0.0.1:47830 "FWD CONNECT www.google.com.hk:443 HTTP/1.1" - -
+INFO - [Mar 30 21:07:37] 127.0.0.1:47835 "FWD CONNECT mail.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 21:07:38] 127.0.0.1:47840 "FWD CONNECT clients4.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 21:08:10] 127.0.0.1:47872 "FWD GET http://www.google-analytics.com/ga.js?_=1396184890391 HTTP/1.1" 200 15746
+INFO - [Mar 30 21:08:11] 127.0.0.1:47890 "FWD GET http://www.google-analytics.com/__utm.gif?utmwv=5.4.8&utms=1&utmn=1004066497&utmhn=www.cnblogs.com&utmcs=UTF-8&utmsr=1366x768&utmvp=1351x653&utmsc=24-bit&utmul=en-us&utmje=1&utmfl=12.0%20r0&utmdt=%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8Afork%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E6%9D%A5%E8%B4%A1%E7%8C%AE%E4%BB%A3%E7%A0%81%E4%BB%A5%E5%8F%8A%E5%90%8C%E6%AD%A5%E5%8E%9F%E4%BD%9C%E8%80%85%E7%9A%84%E4%BF%AE%E6%94%B9%20-%20%E5%8F%B8%E5%BE%92%E6%AD%A3%E7%BE%8E%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD&utmhid=2006158342&utmr=https%3A%2F%2Fwww.google.com.hk%2F&utmp=%2Frubylouvre%2Farchive%2F2013%2F01%2F24%2F2874694.html&utmht=1396184891332&utmac=UA-476124-1&utmcc=__utma%3D226521935.1136856176.1395217062.1395367296.1396184891.8%3B%2B__utmz%3D226521935.1396184891.8.5.utmcsr%3Dgoogle%7Cutmccn%3D(organic)%7Cutmcmd%3Dorganic%7Cutmctr%3D(not%2520provided)%3B&utmu=qBAAAAAAAAAAAAAAAAAAAAQ~ HTTP/1.1" 200 35
+INFO - [Mar 30 21:08:13] 127.0.0.1:47878 "GAE GET http://www.googletagservices.com/tag/js/gpt.js HTTP/1.1" 200 12915
+INFO - [Mar 30 21:08:43] 127.0.0.1:47918 "FWD GET http://www.google-analytics.com/__utm.gif?utmwv=5.4.8&utms=1&utmn=1260337487&utmhn=blog.csdn.net&utmcs=UTF-8&utmsr=1366x768&utmvp=1351x653&utmsc=24-bit&utmul=en-us&utmje=1&utmfl=12.0%20r0&utmdt=GitHub%E5%85%A5%E9%97%A8%EF%BC%9A%E5%A6%82%E4%BD%95%E9%83%A8%E7%BD%B2%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%EF%BC%8C%E4%B8%8A%E4%BC%A0%E4%B8%8E%E4%B8%8B%E8%BD%BD%E5%B7%A5%E7%A8%8B%EF%BC%9F%20-%20%E6%8B%A5%E6%8A%B1%E5%8F%98%E5%8C%96%20-%20%E5%8D%9A%E5%AE%A2%E9%A2%91%E9%81%93%20-%20CSDN.NET&utmhid=686412686&utmr=https%3A%2F%2Fwww.google.com.hk%2F&utmp=%2Fsuxinpingtao51%2Farticle%2Fdetails%2F14520585&utmht=1396184923104&utmac=UA-535605-6&utmcc=__utma%3D17226283.2039111066.1395143305.1396182464.1396184923.23%3B%2B__utmz%3D17226283.1396184923.23.21.utmcsr%3Dgoogle%7Cutmccn%3D(organic)%7Cutmcmd%3Dorganic%7Cutmctr%3D(not%2520provided)%3B&utmu=qBEAAAAAAAAAAAAAAAAAAAQ~ HTTP/1.1" 200 35
+INFO - [Mar 30 21:08:50] 127.0.0.1:47968 "GAE GET http://beacon.sina.com.cn/a.gif?V=2.1.10&CI=sz:1366x768|dp:24|ac:Mozilla|an:Netscape|cpu:undefined|pf:Linux%20x86_64|jv:1.3|ct:unkown|lg:en-US|tz:-8|fv:12|ja:1&PI=pid:0-9999-0-0-1|st:0|et:1|ref:https%3A//www.google.com.hk/|hp:unkown|PGLS:|ZT:|MT:|keys:|dom:786|ifr:5&UI=vid:222.66.175.251_1395299992.397841|sid:222.66.175.251_1396184302.793812|lv:1396184302916:6:6:2|un:8:king1991wbs.cn:1896054625::|uo:|ae:|lu:|si:uid%3A1896054625|rs:0|dm:1|su:002A2c-gVlwEm1uAWxfgXELuuu1xVxBxA7VYfHmzaSqp88R2rkWMiUT&MT=&EX=ex1:|ex2:&gUid_1396184928740 HTTP/1.1" 200 35
+INFO - [Mar 30 21:08:55] 127.0.0.1:48018 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_comm||v_SLOT_64_71af71580101q6vy||https%3A//www.google.com.hk/||||&gUid_1396184933994 HTTP/1.1" 200 35
+INFO - [Mar 30 21:08:56] 127.0.0.1:48009 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_comm||v_SLOT_63_3e6541180101cppc||https%3A//www.google.com.hk/||||&gUid_1396184933991 HTTP/1.1" 200 35
+INFO - [Mar 30 21:08:56] 127.0.0.1:48003 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_xg||v_SLOT_42_78_N||https%3A//www.google.com.hk/||||&gUid_1396184933982 HTTP/1.1" 200 35
+INFO - [Mar 30 21:08:56] 127.0.0.1:48019 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_comm||v_SLOT_65_5cdb0e2c0102etxd||https%3A//www.google.com.hk/||||&gUid_1396184933997 HTTP/1.1" 200 35
+INFO - [Mar 30 21:08:56] 127.0.0.1:48008 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_topbar||v_SLOT_48_84_N||https%3A//www.google.com.hk/||||&gUid_1396184933989 HTTP/1.1" 200 35
+INFO - [Mar 30 21:08:57] 127.0.0.1:48035 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_notice||v_SLOT_58_84_N||https%3A//www.google.com.hk/||||&gUid_1396184935989 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:01] 127.0.0.1:47998 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_xg||v_SLOT_41_78_N||https%3A//www.google.com.hk/||||&gUid_1396184933979 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:13] 127.0.0.1:48037 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_notice||v_SLOT_59_84_N||https%3A//www.google.com.hk/||||&gUid_1396184935991 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:21] 127.0.0.1:48047 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_qing_g||v_SLOT_50||https%3A//www.google.com.hk/||||&gUid_1396184959991 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:21] 127.0.0.1:48046 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_qing_g||v_SLOT_49||https%3A//www.google.com.hk/||||&gUid_1396184959987 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:21] 127.0.0.1:48045 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_bjqing_g||v_bjqing_g||https%3A//www.google.com.hk/||||&gUid_1396184959985 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:22] 127.0.0.1:48048 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_qing_g||v_SLOT_51||https%3A//www.google.com.hk/||||&gUid_1396184959993 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:23] 127.0.0.1:48049 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_xg||v_blogxg||https%3A//www.google.com.hk/||||&gUid_1396184959998 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:25] 127.0.0.1:48054 "GAE GET http://sina.wrating.com/a.gif?a=145131bdb8e&t=&i=-1627c77c8.144e855d498.0.b50d4d73&b=http%3A//blog.sina.com.cn/s/blog_5674d18801018de8.html&c=860010-0328010000&s=1366x768x24&l=en-us&z=8&j=1&f=12.0%20r0&r=https%3A//www.google.com.hk/&kw=&ut=11&n=&js=&ck=1 HTTP/1.1" 200 43
+INFO - [Mar 30 21:09:26] 127.0.0.1:48050 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_tjblog||v_tjblog||https%3A//www.google.com.hk/||||&gUid_1396184960001 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:27] 127.0.0.1:48060 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_slide_g||v_SLOT_98_78_N||https%3A//www.google.com.hk/||||&gUid_1396184965983 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:27] 127.0.0.1:48061 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_slide_g||v_SLOT_99_69_N||https%3A//www.google.com.hk/||||&gUid_1396184965986 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:28] 127.0.0.1:48062 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_slide_g||v_SLOT_100_78_N||https%3A//www.google.com.hk/||||&gUid_1396184965988 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:28] 127.0.0.1:48063 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_slide_g||v_SLOT_101_69_N||https%3A//www.google.com.hk/||||&gUid_1396184965992 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:29] 127.0.0.1:48064 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_slide_g||v_SLOT_102_78_N||https%3A//www.google.com.hk/||||&gUid_1396184965994 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:33] 127.0.0.1:48081 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_slide_g||v_SLOT_98_78_N||https%3A//www.google.com.hk/||||&gUid_1396184971978 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:33] 127.0.0.1:48084 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_slide_g||v_SLOT_101_69_N||https%3A//www.google.com.hk/||||&gUid_1396184971984 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:33] 127.0.0.1:48085 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_slide_g||v_SLOT_102_78_N||https%3A//www.google.com.hk/||||&gUid_1396184971986 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:33] 127.0.0.1:48082 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_slide_g||v_SLOT_99_69_N||https%3A//www.google.com.hk/||||&gUid_1396184971980 HTTP/1.1" 200 35
+INFO - [Mar 30 21:09:34] 127.0.0.1:48083 "GAE GET http://beacon.sina.com.cn/e.gif?UATrack||222.66.175.251_1395299992.397841||222.66.175.251_1396184302.793812||8:king1991wbs.cn:1896054625::||blog_slide_g||v_SLOT_100_78_N||https%3A//www.google.com.hk/||||&gUid_1396184971982 HTTP/1.1" 200 35
+INFO - [Mar 30 21:12:37] 127.0.0.1:48156 "FWD CONNECT mail.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 21:15:24] 127.0.0.1:48208 "FWD CONNECT clients4.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 21:15:26] 127.0.0.1:48213 "FWD CONNECT accounts.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 21:16:19] 127.0.0.1:48230 "AGENT CONNECT github.global.ssl.fastly.net:443 HTTP/1.1" - -
+INFO - [Mar 30 21:16:20] 127.0.0.1:48230 "GAE GET https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif HTTP/1.1" 304 0
+INFO - [Mar 30 21:16:29] 127.0.0.1:48242 "FWD CONNECT clients4.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 21:27:06] 127.0.0.1:48378 "FWD CONNECT clients4.google.com:443 HTTP/1.1" - -
+INFO - [Mar 30 21:31:35] 127.0.0.1:48438 "FWD CONNECT mail.google.com:443 HTTP/1.1" - -
