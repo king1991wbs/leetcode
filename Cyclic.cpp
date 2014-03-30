@@ -47,9 +47,12 @@ void cyclic::insert(int con2insert)
         if(front->content > back->content && (con2insert >= max(front->content,back->content) 
                                               || con2insert <= min(front->content,back->content)))
         {
+            /*
             ins->next = back;
             front->next = ins;
             return;
+            */
+            break;
         }
 
         if(back == this->cyc_start)
@@ -62,16 +65,22 @@ void cyclic::insert(int con2insert)
                 back = back->next;
             }
             */
+           /*
             ins->next = back;
             front->next = ins;
             return;
+            */
+            break;
         }
         
         if(con2insert >= front->content && con2insert <= back->content)
         {
+            /*
             ins->next = back;
             front->next = ins;
             return;
+            */
+            break;
         }
 
         //其他情况
@@ -81,6 +90,9 @@ void cyclic::insert(int con2insert)
         front = back;
         back = back->next;
     }
+    ins->next = back;
+    front->next = ins;
+    return;
 }
 
 int main()
