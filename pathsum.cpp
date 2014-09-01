@@ -31,7 +31,7 @@ public:
 
 		return pathsSet;
     }
-
+private:
 	void _aux_pathSum(TreeNode *root,const int sum, int pathVal, std::vector<std::vector<int> > &pathsSet, std::vector<int> path);
 };
 
