@@ -25,11 +25,11 @@ void perputation::_aux_perput(std::vector<int> sequence, std::vector<int> tem, s
 	for (auto iter = sequence.begin(); iter != sequence.end(); iter++)
 	{
 		
-		std::swap(sequence.begin(), iter);
+		std::swap(*sequence.begin(), *iter);
 		tem.push_back(*sequence.begin());
-		sequence.erase(sequence.begin());
-		_aux_perput(sequence, tem, perputSet);
-		tem.clear();
+		//sequence.erase(sequence.begin());
+		_aux_perput(std::vector<int>(++sequence.begin(), sequence.end()), tem, perputSet);
+		tem.pop_back();
 	}
 }
 
