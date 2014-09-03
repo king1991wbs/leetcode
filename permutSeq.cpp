@@ -2,6 +2,7 @@
 #include <functional>
 #include <numeric>
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -18,11 +19,12 @@ public:
 		{
 			int iFrac = frac(i);
 			int m = (k - 1) / iFrac;
-			str += seq[m];
+			str += seq[m] + 48;
 			seq.erase(seq.begin() + m);
 			k = k - m * iFrac;
 		}
-		str += seq[0];//最后一个
+		//string temp(seq[0]);
+		str += seq[0] + 48;//最后一个(加上48进行acsii转意)
 
 		return str;
      }
@@ -38,7 +40,10 @@ private:
 
 int main()
 {
+	/*string str;
+	int t = 1 + 48;
+	str += t;*/
 	Solution sol;
-	sol.getPermutation(1, 1);
+	sol.getPermutation(2, 1);
 	//sol.getPermutation(9, 54494);
 }
