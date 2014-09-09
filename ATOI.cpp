@@ -15,9 +15,9 @@ public:
 			++str;
 			//positive = false;
 		}
-		//去掉了多余的空格和正负号后
-		if(*str < '0' || *str > '9')
-			return 0;
+		////去掉了多余的空格和正负号后
+		//if(*str < '0' || *str > '9')
+		//	return 0;
 
 		while(*str == '0') ++str;//去掉前缀0
 
