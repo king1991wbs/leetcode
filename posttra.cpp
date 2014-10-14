@@ -25,7 +25,8 @@ vector<int> Solution::postorderTraversal(TreeNode *root){
 	if(!root)
 		return seqence;
 	TreeNode *node = root;
-	TreeNode *temp = (TreeNode*)LONG_MAX;
+	//TreeNode *temp = (TreeNode*)LONG_MAX;
+	TreeNode *temp = root;
 	do{
 		//·ÀÖ¹ÖØ×ßnode != temp
 		if (node->left && node->left != temp && node->right != temp){
@@ -52,7 +53,7 @@ vector<int> Solution::postorderTraversal(TreeNode *root){
 	return seqence;
 }
 void constructbtree(TreeNode *&root, int i){
-	if (i > 9) return;
+	if (i > 15) return;
 	root = new TreeNode(i);
 	constructbtree(root->left,  ++i);
 	constructbtree(root->right, ++i);
