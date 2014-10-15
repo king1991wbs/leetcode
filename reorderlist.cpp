@@ -42,6 +42,7 @@ void Solution::reorderList(ListNode *head){
 	temp->next = NULL;
 }
 
+
 int main(){
 	ListNode *head,*_head;
 	_head = new ListNode(0);
