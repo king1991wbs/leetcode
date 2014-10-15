@@ -78,7 +78,7 @@ int main(){
 	ListNode *head,*_head;
 	_head = new ListNode(0);
 	head = _head;
-	for(int i = 1; i < 1; i++){
+	for(int i = 1; i < 3; i++){
 		_head->next = new ListNode(i);
 		_head = _head->next;
 	}
