@@ -11,20 +11,19 @@
  
 class Solution {
 public:
-    bool hasCycle(ListNode *head){
-    	if(!head) return false;
-    	std::unordered_set<ListNode*> nodes;
-    	while(head){
-    		auto pos = nodes.find(head);
-    		if(pos != nodes.end())
-    			break;
-    		nodes.insert(head);
-    		head = head->next;
-    	}
-    	return head != NULL;
+    ListNode *detectCycle(ListNode *head) {
+      if(!head) return head;
+      std::unordered_set<ListNode*> nodes;
+      while(head){
+        auto pos = nodes.find(head);
+        if(pos != nodes.end())
+          break;
+        nodes.insert(head);
+        head = head->next;
+      }
+      return head;
     }
 };
-
 int main(){
 
 	return 0;
