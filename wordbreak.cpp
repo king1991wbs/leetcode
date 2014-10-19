@@ -29,7 +29,6 @@ int main(){
 	string s = "dogs";
 	unordered_set<string> dict;
 	dict.insert("dog");
-	dict.insert("s");
 	dict.insert("gs");
 	Solution sol;
 	sol.wordBreak(s, dict);
