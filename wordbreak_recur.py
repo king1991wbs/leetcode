@@ -13,3 +13,7 @@ class Solution:
         		else:
         			continue
         return False
+sol = Solution()
+sentence = "fohhemkkaecojceoaejkkoedkofhmohkcjmkggcmnami"
+strings = []
+print sol.wordBreak(sentence, strings)
