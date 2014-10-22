@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 *A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
 *
 *Return a deep copy of the list.
@@ -21,7 +21,7 @@ public:
 		if(!head) return head;
 
 		RandomListNode *copy_head = new RandomListNode(head->label);
-		//ÊÇ·ñ±£Áô´ı¶¨
+		//æ˜¯å¦ä¿ç•™å¾…å®š
 		if(!head->next){
 			copy_head->random = head->random ? copy_head : NULL;
 			return copy_head;
@@ -39,7 +39,7 @@ public:
 			copy[head] = copy_head;
 		}
 
-		//¿½±´randomÖ¸Õë
+		//æ‹·è´randomæŒ‡é’ˆ
 		head = _head;
 		copy_head = _copy_head;
 		while(head){
