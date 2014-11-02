@@ -22,11 +22,11 @@ public :
         vector<string> part;
         vector<vector<string>> result;
 
-		vector<vector<bool>> palindRecord(s.size(), vector<bool>(s.size(), false));
-		for(int i = 0; i < s.size(); ++i){
-			for(int j = i; j < s.size(); ++j)
-				palindRecord[i][j] = isPalindrome(i, j, s);
-		}
+	vector<vector<bool>> palindRecord(s.size(), vector<bool>(s.size(), false));
+	for(int i = 0; i < s.size(); ++i){
+		for(int j = i; j < s.size(); ++j)
+			palindRecord[i][j] = isPalindrome(i, j, s);
+	}
 
         if(!s.length())
             return result;
@@ -43,11 +43,11 @@ private:
 
 void Solution::findPalindrome(int i, int j, const string &s, vector<string> &part, vector<vector<string>> &result, vector<vector<bool>> &palindRecord){
 	if(palindRecord[i][j]){
-        part.push_back(s.substr(i, j - i + 1));
-        if(j == s.length() - 1){
-            result.push_back(part);
+     	   	part.push_back(s.substr(i, j - i + 1));
+        	if(j == s.length() - 1){
+       	   	     	result.push_back(part);
 			part.pop_back();
-            return;
+            	return;
         }
         for(int m = j + 1; m < s.length(); ++m){
 			findPalindrome(j + 1, m, s, part, result, palindRecord);
@@ -66,8 +66,8 @@ bool Solution::isPalindrome(int i, int j,const string &s){
     return i > j;
 }
 int main(){
-    //string s = "ltsqjodzeriqdtyewsrpfscozbyrpidadvsmlylqrviuqiynbscgmhulkvdzdicgdwvquigoepiwxjlydogpxdahyfhdnljshgjeprsvgctgnfgqtnfsqizonirdtcvblehcwbzedsmrxtjsipkyxk";
-	string s = "assa";
+    string s = "fifgbeajcacehiicccfecbfhhgfiiecdcjjffbghdidbhbdbfbfjccgbbdcjheccfbhafehieabbdfeigbiaggchaeghaijfbjhi";
+	//string s = "abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab";
     Solution sol;
     sol.partition(s);
     return 0;
