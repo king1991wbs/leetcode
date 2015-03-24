@@ -25,29 +25,32 @@ public:
             return helper(prices);
         }
 
-        int **local = new int*[len + 1];
-        int **global = new int*[len + 1];
-        for( int i = 0; i <= len; ++i ){
+        int **local = new int*[2];
+        int **global = new int*[2];
+        for( int i = 0; i < 2; ++i ){
         	local[i] = new int[k + 1];
         	global[i] = new int[k + 1];
         }
 
-        for( int i = 0; i < len + 1; ++i ){
+        for( int i = 0; i < 2; ++i ){
         	for( int j = 0; j < k + 1; ++j ){
         		local[i][j] = 0;
         		global[i][j] = 0;
         	}
         }
-///actually we  dont need whole k*len array,through the whole cycle we just used two dimensions,i-1 and i
+
+        int idx;
         for( int i = 2; i < len + 1; ++i ){
         	int diff = prices[i - 1] - prices[i - 2];
+
+        	idx = (i + 1) % 2;
         	for( int j = 1; j < k + 1; ++j ){
-        		local[i][j] = max( global[i - 1][j - 1] + max(diff, 0), local[i - 1][j] + diff );
-        		global[i][j] = max( local[i][j], global[i - 1][j] );
+        		local[idx][j] = max( global[1 - idx][j - 1] + max(diff, 0), local[1 - idx][j] + diff );
+        		global[idx][j] = max( local[idx][j], global[1 - idx][j] );
         	}
         }
 
-        return global[len][k];
+        return global[idx][k];
     }
 
      int helper(vector<int> &prices)
