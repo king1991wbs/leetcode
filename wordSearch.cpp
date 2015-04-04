@@ -68,7 +68,7 @@ private:
 };
 
 int main(){
-	string word = "SEECS";
+	string word = "SEES";
 	vector<vector<char> > board = {
 		{'A','B','C','E'},
   		{'S','F','C','S'},
