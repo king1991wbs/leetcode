@@ -21,7 +21,7 @@ All words contain only lowercase alphabetic characters.
 #include <string>
 #include <list>
 #include <vector>
-#include <cstdlib>
+#include <deque>
 #include <unordered_set>
 
 using namespace std;
@@ -31,71 +31,54 @@ public:
     vector<vector<string>> findLadders(string start, string end, unordered_set<string> &dict) {
     	vector<string> path;
         vector<vector<string> > transPath;
-        if( diffOneChar(start, end) ){
-            path.push_back( start );
-            path.push_back( end );
-            transPath.push_back( path );
-            return transPath;
+        deque<vector<string> > candiPath;
+        unordered_set<string> uniqe;
+        bool found = false;
+
+        dict.insert(end);
+        dict.erase( start );
+        path.push_back(start);
+        candiPath.push_back(path);
+        while( !found && !candiPath.empty() ){
+            int pathNum = candiPath.size();
+            for( int i = 0; i < pathNum; i++ ){
+                path = candiPath.front();
+                candiPath.pop_front();
+
+                string temp = path[path.size() - 1];
+                for( auto iter : diffOneChar(temp, dict) ){
+                    uniqe.insert( iter );
+                    path.push_back(iter);
+                    if( iter == end ){
+                        transPath.push_back(path);
+                        found = true;
+                    }
+                    candiPath.push_back( path );
+                    path.pop_back();
+                }    
+            }
+            for( auto iter : uniqe ){
+                dict.erase( iter );
+            }
+            
         }
 
-        int deep = dict.size() + 5;
-        int maxLen = deep;
-        list<string> l;
-        l.push_back(start);
-        ladders(l, end, dict, path, transPath, deep);
-        for( auto iter = transPath.begin(); iter != transPath.end(); ){
-            if( iter->size() > deep ){
-                iter = transPath.erase(iter);
-                continue;
-            }
-            ++iter;
-        }
-        
         return transPath;
     }
 private:
-    void ladders(list<string> l, string end, unordered_set<string> & dict, vector<string> path,
-                vector<vector<string> > & transPath, int &deep){
-        if( path.size() > deep - 2)
-            return;
-        list<string> l2;
-        while(!l.empty()){
-            string temp = l.front();
-            l.pop_front();
-            path.push_back( temp );
-            if( diffOneChar(temp, end) ){
-                path.push_back(end);
-                deep = deep < path.size() ? deep : path.size();
-                transPath.push_back(path);
-                path.pop_back();
-                path.pop_back();
-                continue;
+    list<string> diffOneChar( string L, const unordered_set<string> & dict){
+        list<string> l;
+        for( int j = 0; j < L.size(); ++j ){
+            char t = L[j];
+            for( char i = 'a'; i <= 'z'; ++i ){
+                L[j] = i;
+                if( dict.find( L ) != dict.end() )
+                    l.push_back( L );
             }
-            for( auto iter = dict.begin(); iter != dict.end(); ){
-                if( diffOneChar(temp, *iter) ){
-                    l2.push_back( *iter );
-                    iter = dict.erase(iter);
-                    continue;
-                }
-                ++iter;
-            }
-            ladders(l2, end, dict, path, transPath, deep);
-            for( auto iter = l2.begin(); iter != l2.end(); ++iter ){
-                dict.insert(*iter);
-            }
-            l2.clear();
-            path.pop_back();
+            L[j] = t;
         }
+        return l;
     }
-
-	bool diffOneChar(const string &L, const string &R){
-		int diff = 0;
-		for( int i = 0; i < L.size(); i++){
-			if( L[i] != R[i] )
-				diff++;
-		}
-		return diff == 1;
-	}
 };
 
 
